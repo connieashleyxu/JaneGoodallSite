@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="icon" type="image/png" href="https://cdn.glitch.com/3f7f86a5-0b78-4f4f-bf53-f8f93af93d78%2F33462-8-jungle-tree-transparent.png?v=1593287183800"/>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+
+  </head>  
+  <body>
+    
+    
+    <nav class="nav-bar">
+        <h1 class="title">Jane Goodall</h1>
+        <ul class="nav-bar-options">
+          <li onclick="window.location.href='https://www.janegoodall.org/our-story/about-jane/';" class="option">About</li>
+          <li onclick="window.location.href='https://www.janegoodall.org/our-impact/';" class="option">Impact</li>
+          <li onclick="window.location.href='https://www.janegoodall.org/';" class="option">Updates</li>
+          <li onclick="window.location.href='https://secure2.convio.net/jgi/site/Donation2;jsessionid=00000000.app20120b?idb=213186739&DONATION_LEVEL_ID_SELECTED=1&df_id=2522&mfc_pref=T&2522.donation=form1&NONCE_TOKEN=0F87F0AB81FCC03C128A9FC2D95C46A5&idb=0';" class="option">Donate</li>
+        </ul>
+      </nav>
+    
+    <p>
+      A powerful woman, revolutionizing the global community one chimp at a time. Check out her <a href="https://www.janegoodall.org/">institute's page</a> for more information!
+    </p>
+
+    <h2 class="media-title1">Young Jane Goodall</h2>
+      <section class="media1">
+        <img
+          class="media-1"
+          width="560"
+          alt="Young Jane Goodall"
+          src="https://cdn.glitch.com/3f7f86a5-0b78-4f4f-bf53-f8f93af93d78%2F01-jane-goodall-difficult-women.adapt.1900.1.jpg?v=1592713221223"
+        />
+        
+        <h2 class="media-title2">Just One of the Chimps!</h2>
+      <section class="media2">
+        <img
+          class="media-2"
+          width="560"
+          alt="Jane Goodall with chimp"
+          src="https://cdn.glitch.com/3f7f86a5-0b78-4f4f-bf53-f8f93af93d78%2Fjane-goodall-2000x1200.jpg?v=1592713224387"
+        />
+        
+        <h2 class="media-title3">One with Nature</h2>
+      <section class="media3">
+        <img
+          class="media-3"
+          width="560"
+          alt="Jane Goodall in nature"
+          src="https://cdn.glitch.com/3f7f86a5-0b78-4f4f-bf53-f8f93af93d78%2F06121908-jane-goodall-5_article_1500x2000.jpg?v=1592713384479"
+        />
+        
+        <div class="favicon" style="position:fixed;top:20px;left:20px;">
+        <img
+          class="media-4"
+          width="200"
+          alt="Jane Goodall Favicon"
+          src="https://cdn.glitch.com/3f7f86a5-0b78-4f4f-bf53-f8f93af93d78%2FJaneGoodallLogo.png?v=1592714585002"
+        />
+        </div>
+        
+        <h2 class="media-title3">The Jane Goodall Institute Location</h2>
+        
+        <div class="map-spacing">
+      <div id="map"></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY3hubmllYXNobGV5IiwiYSI6ImNrYnkxbmdyMzB2a3QzMW9idnJ1YjV4aHMifQ.-ZcBMPqRuJjIqOiGfuYlWw';
+        var map = new mapboxgl.Map({
+           container: 'map',
+           style: 'mapbox://styles/cxnnieashley/ckby1p8gb201p1ipgctp8j1cz',
+          center: [-77.245648, 38.926188], // starting position [lng, lat]
+        zoom: 15.53 // starting zoom
+        });
+      </script>
+    </div>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+  </body>
+</html>
